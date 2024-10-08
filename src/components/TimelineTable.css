@@ -1,0 +1,43 @@
+.timeline-table {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Create 12 equal columns for hours and days */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-header {
+  display: contents; /* Allow the grid layout to manage the headers */
+  background-color: #a1a1a1; /* Gray color for headers */
+}
+
+.header-cell {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+.table-row {
+  display: contents; /* Allow the grid layout to manage the rows */
+}
+
+.day-cell {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+  background-color: #e2e2e2; /* Light gray for day cells */
+}
+
+.course-container {
+  display: flex; /* Use flexbox for courses */
+  border: 1px solid black;
+  position: relative; /* Position relative for proper stacking */
+}
+
+.course {
+  background-color: #88e7b8; /* Course background color */
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+  margin-right: 2px; /* Optional spacing between course blocks */
+  min-width: 50px; /* Set a minimum width for course blocks */
+}
