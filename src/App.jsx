@@ -1,14 +1,12 @@
-import ScheduleForm from './components/ScheduleForm'
-import './App.css'
+import { useState } from 'react'
+import DynamicRulesEngine from './components/DynamicRulesEngine'
 
 function App() {
 
   return (
-    <>
-          <div className=" relative flex size-full min-h-screen flex-col layout-container overflow-x-hidden">
-      <ScheduleForm/>
+    <div className='bg-gray-100'>
+    <DynamicRulesEngine />
     </div>
-    </>
   )
 }
 
